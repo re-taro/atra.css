@@ -8,7 +8,7 @@ const NotFoundPage = lazy(() => import('../../../pages/not-found'));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route element={<Layout />} path="/atra.css/">
+    <Route element={<Layout />} path="/">
       <Route element={<TopPage />} path="" />
       <Route element={<NotFoundPage />} path="*" />
     </Route>,
