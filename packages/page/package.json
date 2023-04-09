@@ -1,0 +1,48 @@
+{
+  "name": "page",
+  "version": "1.0.0",
+  "private": true,
+  "description": "atra.css's page",
+  "bugs": {
+    "url": "https://github.com/re-taro/atra.css/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/re-taro/atra.css.git",
+    "directory": "packages/page"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Rintaro Itokawa",
+    "email": "me@re-taro.dev",
+    "url": "https://re-taro.dev"
+  },
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "format": "npm-run-all -s format:*",
+    "format:eslint": "eslint ./ --fix --ext .ts,.tsx",
+    "format:prettier": "prettier --write ./**/*.{ts,tsx,json}",
+    "lint": "npm-run-all -s lint:*",
+    "lint:eslint": "eslint ./ --ext .ts,.tsx",
+    "lint:prettier": "prettier --check ./**/*.{ts,tsx,json}"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "1.11.0",
+    "@vanilla-extract/css-utils": "0.1.3",
+    "atra.css": "workspace:*",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-error-boundary": "4.0.3",
+    "react-router-dom": "6.10.0"
+  },
+  "devDependencies": {
+    "@types/react": "18.0.33",
+    "@types/react-dom": "18.0.11",
+    "@vanilla-extract/vite-plugin": "3.8.0",
+    "@vitejs/plugin-react": "3.1.0",
+    "terser": "5.16.8",
+    "vite": "4.2.1",
+    "vite-plugin-compression": "0.5.1"
+  }
+}
