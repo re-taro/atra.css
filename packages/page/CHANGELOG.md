@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.2](https://github.com/re-taro/atra.css/compare/web-page-v1.0.1...web-page-v1.0.2) (2023-04-09)
+
+
+### Bug Fixes
+
+* base path ([6f02bad](https://github.com/re-taro/atra.css/commit/6f02bad76bb9aa0b6444a28894c793bf07a63ac3))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * atra.css bumped to 1.0.2
+
 ## [1.0.1](https://github.com/re-taro/atra.css/compare/web-page-v1.0.0...web-page-v1.0.1) (2023-04-09)
 
 

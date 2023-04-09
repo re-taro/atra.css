@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/re-taro/atra.css/compare/atra.css-v1.0.1...atra.css-v1.0.2) (2023-04-09)
+
+
+### Miscellaneous Chores
+
+* **atra.css:** Synchronize atra-hasis versions
+
 ## [1.0.1](https://github.com/re-taro/atra.css/compare/atra.css-v1.0.0...atra.css-v1.0.1) (2023-04-09)
 
 
