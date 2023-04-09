@@ -1,7 +1,6 @@
 import react from '@vitejs/plugin-react';
 import { defineConfig, splitVendorChunkPlugin } from 'vite';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
-import compress from 'vite-plugin-compression';
 
 export default defineConfig(() => {
   return {
@@ -26,7 +25,6 @@ export default defineConfig(() => {
       react(),
       vanillaExtractPlugin(),
       splitVendorChunkPlugin(),
-      compress({ algorithm: 'brotliCompress', ext: '.br' }),
     ],
   };
 });
