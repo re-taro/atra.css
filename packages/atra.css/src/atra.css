@@ -108,6 +108,12 @@
 :where([type='search']) {
   -webkit-appearance: textfield;
   appearance: textfield;
+  outline-offset: -2px;
+}
+
+:where([type='search']::-webkit-search-decoration) {
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 :where([tabindex]:not([tabindex*='-']), a[href], button, [type='button'], [type='reset'], [type='submit'], [role='button'], label, select, summary) {
