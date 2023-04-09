@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.3](https://github.com/re-taro/atra.css/compare/web-page-v1.0.2...web-page-v1.0.3) (2023-04-09)
+
+
+### Bug Fixes
+
+* bloken route ([f139c33](https://github.com/re-taro/atra.css/commit/f139c3309911ec4b8bd7cdd9a4834c50c0ba57ee))
+* **web-page:** remove compress ([8d5825f](https://github.com/re-taro/atra.css/commit/8d5825fdf07f26cca884a49ad29f27ce19dbb95d))
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * atra.css bumped to 1.0.3
+
 ## [1.0.2](https://github.com/re-taro/atra.css/compare/web-page-v1.0.1...web-page-v1.0.2) (2023-04-09)
 
 
