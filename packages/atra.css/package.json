@@ -27,6 +27,7 @@
   "files": [
     "LICENSE",
     "package.json",
+    "README.md",
     "dist/atra.css",
     "dist/atra.min.css",
     "dist/raw.d.ts",
