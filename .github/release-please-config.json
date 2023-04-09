@@ -1,0 +1,22 @@
+{
+  "packages": {
+    "packages/atra.css": {
+      "component": "atra.css"
+    },
+    "packages/page": {
+      "component": "web-page"
+    }
+  },
+  "plugins": [
+    {
+      "type": "node-workspace",
+      "merge": false
+    },
+    {
+      "type": "linked-versions",
+      "group-name": "atra-hasis",
+      "groupName": "atra-hasis",
+      "components": ["atra.css", "web-page"]
+    }
+  ]
+}
