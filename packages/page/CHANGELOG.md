@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1](https://github.com/re-taro/atra.css/compare/web-page-v1.0.0...web-page-v1.0.1) (2023-04-09)
+
+
+### Miscellaneous Chores
+
+* **web-page:** Synchronize atra-hasis versions
+
+
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * atra.css bumped to 1.0.1
+
 ## 1.0.0 (2023-04-09)
 
 

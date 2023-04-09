@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/re-taro/atra.css/compare/atra.css-v1.0.0...atra.css-v1.0.1) (2023-04-09)
+
+
+### Bug Fixes
+
+* [type="search"] ([9470b71](https://github.com/re-taro/atra.css/commit/9470b7148b30d217ede6aa56a0bc82e392b9d8e0))
+
 ## 1.0.0 (2023-04-09)
 
 
