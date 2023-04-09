@@ -84,7 +84,7 @@ jobs:
         run: pnpm install --frozen-lockfile
       - name: Build
         shell: sh
-        run: pnpm --filter "page" build
+        run: pnpm build
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
