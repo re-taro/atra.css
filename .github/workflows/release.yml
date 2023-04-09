@@ -1,0 +1,96 @@
+name: release
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  release-please:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      atra-releases-created: ${{ steps.release.outputs['packages/atra.css--release_created'] }}
+      page-releases-created: ${{ steps.release.outputs['packages/page--release_created'] }}
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - id: release
+        uses: google-github-actions/release-please-action@v3
+        with:
+          command: manifest
+          config-file: .github/release-please-config.json
+          manifest-file: .github/release-please-manifest.json
+          release-type: node
+          token: ${{ secrets.GITHUB_TOKEN }}
+  release:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.atra-releases-created }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+      - name: Install
+        shell: sh
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        shell: sh
+        run: pnpm --filter "atra.css" build
+      - name: Publish to npm
+        run: |
+          pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
+          pnpm --filter "atra.css" publish --access public --no-git-checks
+        shell: sh
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  deploy:
+    needs: release-please
+    if: ${{ needs.release-please.outputs.page-releases-created }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: 'pages'
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+      - name: Set node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: pnpm
+      - name: Install
+        shell: sh
+        run: pnpm install --frozen-lockfile
+      - name: Build
+        shell: sh
+        run: pnpm --filter "page" build
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: './packages/page/dist'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
