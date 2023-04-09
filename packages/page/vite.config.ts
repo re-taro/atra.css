@@ -5,7 +5,6 @@ import compress from 'vite-plugin-compression';
 
 export default defineConfig(() => {
   return {
-    base: '/atra.css/',
     build: {
       minify: 'terser',
       outDir: 'dist',
