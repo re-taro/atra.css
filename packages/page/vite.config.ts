@@ -21,10 +21,6 @@ export default defineConfig(() => {
         toplevel: true,
       },
     },
-    plugins: [
-      react(),
-      vanillaExtractPlugin(),
-      splitVendorChunkPlugin(),
-    ],
+    plugins: [react(), vanillaExtractPlugin(), splitVendorChunkPlugin()],
   };
 });
