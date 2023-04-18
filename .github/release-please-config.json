@@ -10,13 +10,8 @@
   "plugins": [
     {
       "type": "node-workspace",
-      "merge": false
-    },
-    {
-      "type": "linked-versions",
-      "group-name": "atra-hasis",
-      "groupName": "atra-hasis",
-      "components": ["atra.css", "web-page"]
+      "merge": false,
+      "always-link-local": false
     }
   ]
 }
