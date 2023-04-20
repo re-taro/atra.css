@@ -15,6 +15,13 @@ module.exports = {
         plugins: [require.resolve('prettier-plugin-sort-json')],
       },
     },
+    {
+      files: ["*.svelte"],
+      options: {
+        parser: "svelte",
+        plugins: [require.resolve("prettier-plugin-svelte")],
+      }
+    }
   ],
   plugins: [],
   printWidth: 120,
