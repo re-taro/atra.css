@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/re-taro/atra.css/compare/web-page-v1.0.3...web-page-v1.0.4) (2023-04-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency react-error-boundary to v4.0.4 ([5b32794](https://github.com/re-taro/atra.css/commit/5b3279400e475af4314c0946d1fde47d0f68dcf8))
+
 ## [1.0.3](https://github.com/re-taro/atra.css/compare/web-page-v1.0.2...web-page-v1.0.3) (2023-04-09)
 
 ### Bug Fixes
