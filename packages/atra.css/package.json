@@ -34,7 +34,7 @@
     "dist/raw.js"
   ],
   "scripts": {
-    "prebuild": "mkdir tmp",
+    "prebuild": "mkdir -p tmp",
     "build": "npm-run-all build:css build:css:min",
     "postbuild": "rimraf tmp",
     "build:bundle": "node ./script/build.mjs",
@@ -42,13 +42,13 @@
     "postbuild:css": "node ./script/to-raw.mjs && npm run build:bundle",
     "build:css:min": "postcss --env production ./src/atra.css > ./dist/atra.min.css",
     "format": "npm-run-all -s format:*",
-    "format:eslint": "eslint ./ --fix --ext .mjs,.cjs,.ts,.tsx",
-    "format:prettier": "prettier --write ./**/*.{ts,tsx,mjs,cjs,json}",
-    "format:stylelint": "stylelint --ignore-path .gitignore --fix ./**/*.css",
+    "format:eslint": "eslint ./ --ignore-path ../../.gitignore --fix --ext .mjs,.cjs",
+    "format:prettier": "prettier --ignore-path ../../.gitignore --write ./**/*.{mjs,cjs,json}",
+    "format:stylelint": "stylelint --fix ./src/atra.css",
     "lint": "npm-run-all -s lint:*",
-    "lint:eslint": "eslint ./ --ext .mjs,.cjs,.ts,.tsx",
-    "lint:prettier": "prettier --check ./**/*.{ts,tsx,mjs,cjs,json}",
-    "lint:stylelint": "stylelint --ignore-path .gitignore ./**/*.css"
+    "lint:eslint": "eslint ./ --ignore-path ../../.gitignore --ext .mjs,.cjs",
+    "lint:prettier": "prettier --ignore-path ../../.gitignore --check ./**/*.{mjs,cjs,json}",
+    "lint:stylelint": "stylelint ./src/atra.css"
   },
   "devDependencies": {
     "cssnano": "6.0.0",

@@ -1,7 +1,6 @@
 {
   "name": "page",
   "version": "1.0.3",
-  "private": true,
   "description": "atra.css's page",
   "bugs": {
     "url": "https://github.com/re-taro/atra.css/issues"
@@ -17,31 +16,30 @@
     "email": "me@re-taro.dev",
     "url": "https://re-taro.dev"
   },
+  "type": "module",
   "scripts": {
     "build": "vite build",
-    "dev": "vite",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "dev": "vite dev",
     "format": "npm-run-all -s format:*",
-    "format:eslint": "eslint ./ --fix --ext .ts,.tsx",
-    "format:prettier": "prettier --write ./**/*.{ts,tsx,json}",
+    "format:eslint": "eslint ./ --ignore-path ../../.gitignore --fix --ext .svelte,.cjs,.ts",
+    "format:prettier": "prettier --ignore-path ../../.gitignore --plugin-search-dir src --write ./**/*.{js,ts,json,svelte}",
     "lint": "npm-run-all -s lint:*",
-    "lint:eslint": "eslint ./ --ext .ts,.tsx",
-    "lint:prettier": "prettier --check ./**/*.{ts,tsx,json}"
+    "lint:eslint": "eslint ./ --ignore-path ../../.gitignore --ext .svelte,.cjs,.ts",
+    "lint:prettier": "prettier --ignore-path ../../.gitignore --plugin-search-dir src --check  ./**/*.{js,ts,json,svelte}",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "@vanilla-extract/css": "1.11.0",
-    "@vanilla-extract/css-utils": "0.1.3",
     "atra.css": "workspace:*",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-error-boundary": "4.0.4",
-    "react-router-dom": "6.10.0"
+    "sass": "1.62.0"
   },
   "devDependencies": {
-    "@types/react": "18.0.38",
-    "@types/react-dom": "18.0.11",
-    "@vanilla-extract/vite-plugin": "3.8.0",
-    "@vitejs/plugin-react": "4.0.0",
-    "terser": "5.17.1",
+    "@sveltejs/adapter-static": "2.0.2",
+    "@sveltejs/kit": "1.5.0",
+    "svelte": "3.54.0",
+    "svelte-check": "3.0.1",
+    "tslib": "2.4.1",
     "vite": "4.3.1"
   }
 }

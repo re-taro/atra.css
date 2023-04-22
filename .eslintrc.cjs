@@ -1,6 +1,3 @@
 module.exports = {
-  extends: [
-    '@re-taro',
-    'prettier',
-  ],
+  extends: ['@re-taro'],
 };
