@@ -1,9 +1,8 @@
 <footer>
   created by&nbsp;
-    <a href="https://github.com/re-taro" target="_blank" rel="noreferrer">
-      re-taro
-    </a>
+  <a href="https://github.com/re-taro" target="_blank" rel="noreferrer"> re-taro </a>
 </footer>
+
 <style lang="scss">
   @use '../../style/variable' as var;
 

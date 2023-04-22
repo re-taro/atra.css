@@ -3,22 +3,14 @@
   <p>A lightly modern reset CSS</p>
   <nav>
     <div>
-      <a href="#example" class="guide-button">
-        Get started
-      </a>
+      <a href="#example" class="guide-button"> Get started </a>
     </div>
     <div>
-      <a
-        href="https://github.com/re-taro/atra.css"
-        target="_blank"
-        rel="noreferrer"
-        class="guide-github"
-      >
-        GitHub
-      </a>
+      <a href="https://github.com/re-taro/atra.css" target="_blank" rel="noreferrer" class="guide-github"> GitHub </a>
     </div>
   </nav>
 </header>
+
 <style lang="scss">
   @use '../../style/variable' as var;
 

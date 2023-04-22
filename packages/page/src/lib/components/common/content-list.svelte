@@ -1,8 +1,9 @@
 <div>
   <slot />
 </div>
+
 <style lang="scss">
-  @use "../../style/variable" as var;
+  @use '../../style/variable' as var;
 
   div {
     display: flex;

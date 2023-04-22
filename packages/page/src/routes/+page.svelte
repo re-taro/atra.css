@@ -1,15 +1,14 @@
 <script lang="ts">
-  import LayoutContent from "$lib/components/common/layout-content.svelte";
-  import TextSection from "$lib/components/text.svelte";
-  import InlineSection from "$lib/components/inline.svelte";
-  import FormSection from "$lib/components/form.svelte";
-  import ImageSection from "$lib/components/image.svelte";
-  import FlowContentSection from "$lib/components/flow-content.svelte";
+  import LayoutContent from '$lib/components/common/layout-content.svelte';
+  import TextSection from '$lib/components/text.svelte';
+  import InlineSection from '$lib/components/inline.svelte';
+  import FormSection from '$lib/components/form.svelte';
+  import ImageSection from '$lib/components/image.svelte';
+  import FlowContentSection from '$lib/components/flow-content.svelte';
 </script>
+
 <section class="section-container">
-  <h2 class="section-heading" id="installation">
-    Installation
-  </h2>
+  <h2 class="section-heading" id="installation">Installation</h2>
   <section>
     <LayoutContent>
       <h3 class="content-heading">package manager</h3>
@@ -26,9 +25,7 @@
   </section>
 </section>
 <section class="section-container">
-  <h2 class="section-heading" id="example">
-    Example
-  </h2>
+  <h2 class="section-heading" id="example">Example</h2>
   <section>
     <LayoutContent>
       <TextSection />
@@ -47,8 +44,9 @@
     </LayoutContent>
   </section>
 </section>
+
 <style lang="scss">
-  @use "../lib/style/variable" as var;
+  @use '../lib/style/variable' as var;
 
   .section-heading {
     margin-bottom: calc(var.$spacing * 4);

@@ -23,11 +23,11 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "dev": "vite dev",
     "format": "npm-run-all -s format:*",
-    "format:eslint": "eslint ./ --fix --ext .svelte,.cjs,.ts",
-    "format:prettier": "prettier --plugin-search-dir . --write .",
+    "format:eslint": "eslint ./ --ignore-path ../../.gitignore --fix --ext .svelte,.cjs,.ts",
+    "format:prettier": "prettier --ignore-path ../../.gitignore --plugin-search-dir src --write ./**/*.{js,ts,json,svelte}",
     "lint": "npm-run-all -s lint:*",
-    "lint:eslint": "eslint ./ --ext .svelte,.cjs,.ts",
-    "lint:prettier": "prettier --plugin-search-dir . --check .",
+    "lint:eslint": "eslint ./ --ignore-path ../../.gitignore --ext .svelte,.cjs,.ts",
+    "lint:prettier": "prettier --ignore-path ../../.gitignore --plugin-search-dir src --check  ./**/*.{js,ts,json,svelte}",
     "preview": "vite preview"
   },
   "dependencies": {

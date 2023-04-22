@@ -1,8 +1,9 @@
 <h2>
   <slot />
 </h2>
+
 <style lang="scss">
-  @use "../../style/variable" as var;
+  @use '../../style/variable' as var;
 
   h2 {
     margin-bottom: calc(var.$spacing * 2);
