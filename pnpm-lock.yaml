@@ -5,8 +5,8 @@ importers:
   .:
     devDependencies:
       '@re-taro/eslint-config':
-        specifier: 1.9.0
-        version: 1.9.0(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4)
+        specifier: 1.9.1
+        version: 1.9.1(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4)
       eslint:
         specifier: 8.40.0
         version: 8.40.0
@@ -482,12 +482,12 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@re-taro/eslint-config@1.9.0(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-57XgtF3Yj9Nr7hnNNGa05Q5lhPvAYB+iKpNsTK28PKNOw2wSh75R2cPVmvUrH3+eaqMFeSrufriEfmGdOLsxTg==}
+  /@re-taro/eslint-config@1.9.1(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-UCC0wcRwHEJ5hSCvHw5uKgYT+92O7wdKYlAguTOFLY5f/cEN9CMZTveUj1KtzwDx96ZcQ1b1j7jM7mPp4wDpEg==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
-      '@re-taro/eslint-plugin': 1.9.0(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4)
+      '@re-taro/eslint-plugin': 1.9.1(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4)
       eslint: 8.40.0
       eslint-config-prettier: 8.8.0(eslint@8.40.0)
     transitivePeerDependencies:
@@ -498,8 +498,8 @@ packages:
       - typescript
     dev: true
 
-  /@re-taro/eslint-plugin@1.9.0(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4):
-    resolution: {integrity: sha512-dYy5jABqqficUZCLxm+MuhofwAYHHuyQVo930NNxjp/sA6imqHnm+YbPdy8FEJoFHKtSaxJTDP0OVY9mV+XOSQ==}
+  /@re-taro/eslint-plugin@1.9.1(eslint@8.40.0)(svelte@3.59.0)(typescript@5.0.4):
+    resolution: {integrity: sha512-rWO+Z0snXYvLEf4CBsI6SizkDbq9dooN/rlV9kvdIuL+tc3TxgQctwFgJWQB+NH9/TowabNtygvrGtwqZOt8Cg==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
@@ -522,10 +522,10 @@ packages:
       eslint-plugin-redos: 4.5.0-beta.4(eslint@8.40.0)
       eslint-plugin-svelte3: 4.0.0(eslint@8.40.0)(svelte@3.59.0)
       eslint-plugin-unicorn: 47.0.0(eslint@8.40.0)
-      eslint-plugin-vue: 9.11.0(eslint@8.40.0)
-      eslint-plugin-yml: 1.5.0(eslint@8.40.0)
+      eslint-plugin-vue: 9.11.1(eslint@8.40.0)
+      eslint-plugin-yml: 1.6.0(eslint@8.40.0)
       jsonc-eslint-parser: 2.2.0
-      yaml-eslint-parser: 1.2.0
+      yaml-eslint-parser: 1.2.1
     transitivePeerDependencies:
       - eslint-import-resolver-node
       - eslint-import-resolver-webpack
@@ -1900,8 +1900,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue@9.11.0(eslint@8.40.0):
-    resolution: {integrity: sha512-bBCJAZnkBV7ATH4Z1E7CvN3nmtS4H7QUU3UBxPdo8WohRU+yHjnQRALpTbxMVcz0e4Mx3IyxIdP5HYODMxK9cQ==}
+  /eslint-plugin-vue@9.11.1(eslint@8.40.0):
+    resolution: {integrity: sha512-SNtBGDrRkPUFsREswPceqdvZ7YVdWY+iCYiDC+RoxwVieeQ7GJU1FLDlkcaYTOD2os/YuVgI1Fdu8YGM7fmoow==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -1918,8 +1918,8 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-yml@1.5.0(eslint@8.40.0):
-    resolution: {integrity: sha512-iygN054g+ZrnYmtOXMnT+sx9iDNXt89/m0+506cQHeG0+5jJN8hY5iOPQLd3yfd50AfK/mSasajBWruf1SoHpQ==}
+  /eslint-plugin-yml@1.6.0(eslint@8.40.0):
+    resolution: {integrity: sha512-KK3tu8notai2l6BgMvK1yay6RW7FwVRqL48PlKI1AGEpQNwvq/OfNwPMmNWb4/Eu2X22FHUjCnCfCP+bc0pzLw==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: '>=6.0.0'
@@ -1928,7 +1928,7 @@ packages:
       eslint: 8.40.0
       lodash: 4.17.21
       natural-compare: 1.4.0
-      yaml-eslint-parser: 1.2.0
+      yaml-eslint-parser: 1.2.1
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -4872,8 +4872,8 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
-  /yaml-eslint-parser@1.2.0:
-    resolution: {integrity: sha512-OmuvQd5lyIJWfFALc39K5fGqp0aWNc+EtyhVgcQIPZaUKMnTb7An3RMp+QJizJ/x0F4kpgTNe6BL/ctdvoIwIg==}
+  /yaml-eslint-parser@1.2.1:
+    resolution: {integrity: sha512-XxLosxcDd0lBF1OEANOod8I/gn+VrYdSbUFAgfoYntY/vktK2V38Nknu4ZbQELTt38CJfxRlYOWYQC2kTytX8Q==}
     engines: {node: ^14.17.0 || >=16.0.0}
     dependencies:
       eslint-visitor-keys: 3.4.1
