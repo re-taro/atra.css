@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.6](https://github.com/re-taro/atra.css/compare/web-page-v1.0.5...web-page-v1.0.6) (2023-06-15)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.63.2 ([3f7dd74](https://github.com/re-taro/atra.css/commit/3f7dd74b33b7ed07eadc3d50e8532bf343207a6e))
+* **deps:** update dependency sass to v1.63.3 ([4d6f948](https://github.com/re-taro/atra.css/commit/4d6f948f2e2821fd9abff5ef5424a9fdaa51c995))
+* **deps:** update dependency sass to v1.63.4 ([ddb016b](https://github.com/re-taro/atra.css/commit/ddb016b772365bb1ba009b1ec0655bd0ed584c6e))
+
 ## [1.0.5](https://github.com/re-taro/atra.css/compare/web-page-v1.0.4...web-page-v1.0.5) (2023-04-26)
 
 
