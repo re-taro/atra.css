@@ -22,6 +22,9 @@ jobs:
         uses: re-taro/actions/setup-node@v1.0.0
         with:
           node-version-file: .tool-versions
+      - name: Build
+        run: pnpm build
+        shell: sh
       - name: Lint
         run: pnpm lint
         shell: sh
