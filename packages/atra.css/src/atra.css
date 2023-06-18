@@ -95,7 +95,6 @@
 
 :where(button, [type='button'], [type='reset'], [type='submit']) {
   -webkit-appearance: button;
-  appearance: button;
 }
 
 :where(abbr[title]) {
@@ -107,16 +106,25 @@
 
 :where([type='search']) {
   -webkit-appearance: textfield;
-  appearance: textfield;
   outline-offset: -2px;
 }
 
 :where([type='search']::-webkit-search-decoration) {
   -webkit-appearance: none;
-  appearance: none;
 }
 
-:where([tabindex]:not([tabindex*='-']), a[href], button, [type='button'], [type='reset'], [type='submit'], [role='button'], label, select, summary) {
+:where(
+    [tabindex]:not([tabindex*='-']),
+    a[href],
+    button,
+    [type='button'],
+    [type='reset'],
+    [type='submit'],
+    [role='button'],
+    label,
+    select,
+    summary
+  ) {
   cursor: pointer;
 }
 
@@ -134,19 +142,4 @@
 
 :where([aria-disabled='true' i], [disabled]) {
   cursor: not-allowed;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  :where(html:focus-within) {
-    scroll-behavior: auto;
-  }
-
-  :where(*, *::before, *::after) {
-    transition-duration: 0s !important;
-    transition-delay: 0s !important;
-    animation-duration: 0s !important;
-    animation-delay: 0s !important;
-    animation-iteration-count: 1 !important;
-    scroll-behavior: auto !important;
-  }
 }
