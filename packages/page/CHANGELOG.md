@@ -1,5 +1,11 @@
 # Changelog
 
+### Dependencies
+
+* The following workspace dependencies were updated
+  * dependencies
+    * atra.css bumped to 1.1.0
+
 ## [1.0.6](https://github.com/re-taro/atra.css/compare/web-page-v1.0.5...web-page-v1.0.6) (2023-06-15)
 
 
