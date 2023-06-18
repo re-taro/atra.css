@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/re-taro/atra.css/compare/atra.css-v1.0.3...atra.css-v1.1.0) (2023-06-18)
+
+
+### Features
+
+* remove prefers reduced motion ([7272fbd](https://github.com/re-taro/atra.css/commit/7272fbd083a19559ba988809f9fd41fb6a51ae51))
+
 ## [1.0.3](https://github.com/re-taro/atra.css/compare/atra.css-v1.0.2...atra.css-v1.0.3) (2023-04-09)
 
 
