@@ -9,41 +9,19 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v3.5.3
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.0.0
         with:
-          version: latest
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: pnpm
-      - name: Install
-        run: pnpm install --frozen-lockfile
-        shell: sh
-      - name: Build
-        run: pnpm build
-        shell: sh
+          node-version-file: .tool-versions
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v3.5.3
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.0.0
         with:
-          version: latest
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: pnpm
-      - name: Install
-        run: pnpm install --frozen-lockfile
-        shell: sh
-      - name: Build
-        run: pnpm build
-        shell: sh
+          node-version-file: .tool-versions
       - name: Lint
         run: pnpm lint
         shell: sh

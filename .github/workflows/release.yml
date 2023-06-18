@@ -15,11 +15,11 @@ jobs:
       atra-releases-created: ${{ steps.release.outputs['packages/atra.css--release_created'] }}
       page-releases-created: ${{ steps.release.outputs['packages/page--release_created'] }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v3.5.3
         with:
           fetch-depth: 0
       - id: release
-        uses: google-github-actions/release-please-action@v3
+        uses: google-github-actions/release-please-action@v3.7.9
         with:
           command: manifest
           config-file: .github/release-please-config.json
@@ -31,22 +31,11 @@ jobs:
     if: ${{ needs.release-please.outputs.atra-releases-created }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v3.5.3
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.0.0
         with:
-          version: latest
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: pnpm
-      - name: Install
-        shell: sh
-        run: pnpm install --frozen-lockfile
-      - name: Build
-        shell: sh
-        run: pnpm --filter "atra.css" build
+          node-version-file: .tool-versions
       - name: Publish to npm
         run: |
           pnpm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
@@ -69,28 +58,17 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v3
-      - name: Install pnpm
-        uses: pnpm/action-setup@v2
+      - uses: actions/checkout@v3.5.3
+      - name: Setup Node.js
+        uses: re-taro/actions/setup-node@v1.0.0
         with:
-          version: latest
-      - name: Set node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: pnpm
-      - name: Install
-        shell: sh
-        run: pnpm install --frozen-lockfile
-      - name: Build
-        shell: sh
-        run: pnpm build
+          node-version-file: .tool-versions
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v3.0.6
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v1.0.8
         with:
           path: './packages/page/build'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v2.0.2
