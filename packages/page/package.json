@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "atra.css": "workspace:*",
-    "sass": "1.63.5"
+    "sass": "1.63.6"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "2.0.2",
