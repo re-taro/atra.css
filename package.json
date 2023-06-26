@@ -2,7 +2,7 @@
   "name": "atra-hasis",
   "description": "atra.css monorepo",
   "version": "0.0.0",
-  "packageManager": "pnpm@8.6.4",
+  "packageManager": "pnpm@8.6.5",
   "license": "MIT",
   "author": {
     "name": "Rintaro Itokawa",
