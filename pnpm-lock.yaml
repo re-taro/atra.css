@@ -63,8 +63,8 @@ importers:
         specifier: 9.1.0
         version: 9.1.0(stylelint@15.10.0)
       stylelint-config-recommended:
-        specifier: 12.0.0
-        version: 12.0.0(stylelint@15.10.0)
+        specifier: 13.0.0
+        version: 13.0.0(stylelint@15.10.0)
       stylelint-declaration-block-no-ignored-properties:
         specifier: 2.7.0
         version: 2.7.0(stylelint@15.10.0)
@@ -4542,10 +4542,11 @@ packages:
       stylelint-order: 6.0.3(stylelint@15.10.0)
     dev: true
 
-  /stylelint-config-recommended@12.0.0(stylelint@15.10.0):
-    resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
+  /stylelint-config-recommended@13.0.0(stylelint@15.10.0):
+    resolution: {integrity: sha512-EH+yRj6h3GAe/fRiyaoO2F9l9Tgg50AOFhaszyfov9v6ayXJ1IkSHwTxd7lB48FmOeSGDPLjatjO11fJpmarkQ==}
+    engines: {node: ^14.13.1 || >=16.0.0}
     peerDependencies:
-      stylelint: ^15.5.0
+      stylelint: ^15.10.0
     dependencies:
       stylelint: 15.10.0
     dev: true
