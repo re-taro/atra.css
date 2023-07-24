@@ -91,8 +91,8 @@ importers:
         specifier: 3.4.6
         version: 3.4.6(sass@1.64.1)(svelte@4.1.1)
       tslib:
-        specifier: 2.6.0
-        version: 2.6.0
+        specifier: 2.6.1
+        version: 2.6.1
       vite:
         specifier: 4.4.7
         version: 4.4.7(sass@1.64.1)
@@ -511,7 +511,7 @@ packages:
       open: 8.4.2
       picocolors: 1.0.0
       tiny-glob: 0.2.9
-      tslib: 2.6.0
+      tslib: 2.6.1
     dev: true
 
   /@polka/url@1.0.0-next.21:
@@ -4560,7 +4560,7 @@ packages:
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
       '@pkgr/utils': 2.3.1
-      tslib: 2.6.0
+      tslib: 2.6.1
     dev: true
 
   /table@6.8.1:
@@ -4628,8 +4628,8 @@ packages:
       strip-bom: 3.0.0
     dev: true
 
-  /tslib@2.6.0:
-    resolution: {integrity: sha512-7At1WUettjcSRHXCyYtTselblcHl9PJFFVKiCAy/bY97+BPZXSQ2wbq0P9s8tK2G7dFQfNnlJnPAiArVBVBsfA==}
+  /tslib@2.6.1:
+    resolution: {integrity: sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==}
     dev: true
 
   /type-check@0.4.0:
