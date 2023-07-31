@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@re-taro/eslint-config':
-        specifier: 1.9.23
-        version: 1.9.23(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6)
+        specifier: 1.9.24
+        version: 1.9.24(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6)
       eslint:
         specifier: 8.46.0
         version: 8.46.0
@@ -513,12 +513,12 @@ packages:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
 
-  /@re-taro/eslint-config@1.9.23(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6):
-    resolution: {integrity: sha512-FZ6hN/wfA//xN+kp4ZX1bTHLRUUg1/36KzSCKs4Vb2HtIa5UaL3aB1KcNgo+BK2oc09lO9I81TYeq72n2De7zQ==}
+  /@re-taro/eslint-config@1.9.24(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6):
+    resolution: {integrity: sha512-BCDSt26L156WHeZuzaUYlGe0jiFfVLXkGP0CDRjs2guuj5JKcHxuFaTEr2Hyxe3AgGdgN4V+qodJ0RIb0Z7dyA==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
-      '@re-taro/eslint-plugin': 1.9.23(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6)
+      '@re-taro/eslint-plugin': 1.9.24(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6)
       eslint: 8.46.0
       eslint-config-prettier: 8.9.0(eslint@8.46.0)
     transitivePeerDependencies:
@@ -529,8 +529,8 @@ packages:
       - typescript
     dev: true
 
-  /@re-taro/eslint-plugin@1.9.23(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6):
-    resolution: {integrity: sha512-uYD5Ap8KQbdtsL2O0twMhwKgfA6sbBhe/GXfL1dgWc0EIZ6u8O/Opc7Qy7eRoe3XIo7YCh1/rqy3s33YaNPSYw==}
+  /@re-taro/eslint-plugin@1.9.24(eslint@8.46.0)(svelte@3.59.2)(typescript@5.1.6):
+    resolution: {integrity: sha512-enyG//6FX16mzNMhiOP4BihycvteSZJFhdEtg4ggBM4P0Lf/R00jx9jtAor9M183f2YpBS6OL9oZeiPnxH4eKg==}
     peerDependencies:
       eslint: ^8.0.0
     dependencies:
@@ -553,7 +553,7 @@ packages:
       eslint-plugin-redos: 4.5.0-beta.4(eslint@8.46.0)
       eslint-plugin-svelte3: 4.0.0(eslint@8.46.0)(svelte@3.59.2)
       eslint-plugin-unicorn: 48.0.1(eslint@8.46.0)
-      eslint-plugin-vue: 9.16.0(eslint@8.46.0)
+      eslint-plugin-vue: 9.16.1(eslint@8.46.0)
       eslint-plugin-yml: 1.8.0(eslint@8.46.0)
       jsonc-eslint-parser: 2.3.0
       yaml-eslint-parser: 1.2.2
@@ -1053,7 +1053,7 @@ packages:
     resolution: {integrity: sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==}
     dependencies:
       function-bind: 1.1.1
-      get-intrinsic: 1.2.0
+      get-intrinsic: 1.2.1
     dev: true
 
   /callsites@3.1.0:
@@ -1545,7 +1545,7 @@ packages:
       es-set-tostringtag: 2.0.1
       es-to-primitive: 1.2.1
       function.prototype.name: 1.1.5
-      get-intrinsic: 1.2.0
+      get-intrinsic: 1.2.1
       get-symbol-description: 1.0.0
       globalthis: 1.0.3
       gopd: 1.0.1
@@ -1952,8 +1952,8 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-vue@9.16.0(eslint@8.46.0):
-    resolution: {integrity: sha512-SonAuvQXFm9HBV9ww/YkYZVYPMR8ptxxuJwcKGnG9A65SyvNANP9MKlfnC49L6DIwt/YEQZwZWEMHOkL1d5s1A==}
+  /eslint-plugin-vue@9.16.1(eslint@8.46.0):
+    resolution: {integrity: sha512-2FtnTqazA6aYONfDuOZTk0QzwhAwi7Z4+uJ7+GHeGxcKapjqWlDsRWDenvyG/utyOfAS5bVRmAG3cEWiYEz2bA==}
     engines: {node: ^14.17.0 || >=16.0.0}
     peerDependencies:
       eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
@@ -2219,14 +2219,6 @@ packages:
     engines: {node: 6.* || 8.* || >= 10.*}
     dev: true
 
-  /get-intrinsic@1.2.0:
-    resolution: {integrity: sha512-L049y6nFOuom5wGyRc3/gdTLO94dySVKRACj1RmJZBQXlbTMhtNIgkWkUHq+jYmZvKf14EW1EoJnnjbmoHij0Q==}
-    dependencies:
-      function-bind: 1.1.1
-      has: 1.0.3
-      has-symbols: 1.0.3
-    dev: true
-
   /get-intrinsic@1.2.1:
     resolution: {integrity: sha512-2DcsyfABl+gVHEfCOaTrWgyt+tb6MSEGmKq+kI5HwLbIYgjgmMcV8KQ41uaKz1xxUcn9tJtgFbQUEVcEbd0FYw==}
     dependencies:
@@ -2405,7 +2397,7 @@ packages:
   /has-property-descriptors@1.0.0:
     resolution: {integrity: sha512-62DVLZGoiEBDHQyqG4w9xCuZ7eJEwNmJRWw2VY84Oedb7WFcA27fiEVe8oUQx9hAUJ4ekurquucTGwsyO1XGdQ==}
     dependencies:
-      get-intrinsic: 1.2.0
+      get-intrinsic: 1.2.1
     dev: true
 
   /has-proto@1.0.1:
