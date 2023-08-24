@@ -15,7 +15,7 @@ jobs:
       atra-releases-created: ${{ steps.release.outputs['packages/atra.css--release_created'] }}
       page-releases-created: ${{ steps.release.outputs['packages/page--release_created'] }}
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3.6.0
         with:
           fetch-depth: 0
       - id: release
@@ -31,7 +31,7 @@ jobs:
     if: ${{ needs.release-please.outputs.atra-releases-created }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3.6.0
       - name: Setup Node.js
         uses: re-taro/actions/setup-node@v1.2.0
         with:
@@ -61,7 +61,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v3.5.3
+      - uses: actions/checkout@v3.6.0
       - name: Setup Node.js
         uses: re-taro/actions/setup-node@v1.2.0
         with:
