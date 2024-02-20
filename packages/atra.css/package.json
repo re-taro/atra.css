@@ -60,7 +60,7 @@
     "stylelint": "15.11.0",
     "stylelint-config-property-sort-order-smacss": "9.1.0",
     "stylelint-config-recommended": "13.0.0",
-    "stylelint-declaration-block-no-ignored-properties": "2.7.0"
+    "stylelint-declaration-block-no-ignored-properties": "2.8.0"
   },
   "packageManager": "pnpm@8.11.0",
   "cdn": "dist/atra.css",
