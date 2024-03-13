@@ -51,7 +51,7 @@
     "lint:stylelint": "stylelint ./src/atra.css"
   },
   "devDependencies": {
-    "cssnano": "6.0.3",
+    "cssnano": "6.0.5",
     "esbuild": "0.20.1",
     "postcss": "8.4.35",
     "postcss-banner": "4.0.1",
