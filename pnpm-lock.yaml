@@ -27,8 +27,8 @@ importers:
         specifier: 2.4.12
         version: 2.4.12(prettier@2.8.8)
       prettier-plugin-sort-json:
-        specifier: 2.0.0
-        version: 2.0.0(prettier@2.8.8)
+        specifier: 3.1.0
+        version: 3.1.0(prettier@2.8.8)
       prettier-plugin-svelte:
         specifier: 2.10.1
         version: 2.10.1(prettier@2.8.8)(svelte@3.59.2)
@@ -992,10 +992,6 @@ packages:
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
-    dev: true
-
-  /@types/prettier@2.7.2:
-    resolution: {integrity: sha512-KufADq8uQqo1pYKVIYzfKbJfBAc0sOeXqGbFaSpv8MRmC/zXgowNZmFcbngndGk922QDmOASEXUZCaY48gs4cg==}
     dev: true
 
   /@types/pug@2.0.6:
@@ -4157,13 +4153,12 @@ packages:
       synckit: 0.9.0
     dev: true
 
-  /prettier-plugin-sort-json@2.0.0(prettier@2.8.8):
-    resolution: {integrity: sha512-3gSjdNOZm1ZsNurYGMFIya7m7KDTjcGBq/D5ymiWP770uvLyjGE1sE+IFNwA7igGRRTDjI9pPoikRCICKS131w==}
+  /prettier-plugin-sort-json@3.1.0(prettier@2.8.8):
+    resolution: {integrity: sha512-eIDEUjwzekiVd+oKrpd0aoACBTp5zOW71wDTNy+qQ5C9Q8oqt9n9wCm4F+SeRZbXfgblh/WYIguJynImlBXrvQ==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
-      prettier: ^2.3.2
+      prettier: ^3.0.0
     dependencies:
-      '@types/prettier': 2.7.2
       prettier: 2.8.8
     dev: true
 
