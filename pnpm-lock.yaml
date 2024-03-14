@@ -39,8 +39,8 @@ importers:
   packages/atra.css:
     devDependencies:
       cssnano:
-        specifier: 6.0.5
-        version: 6.0.5(postcss@8.4.35)
+        specifier: 6.1.0
+        version: 6.1.0(postcss@8.4.35)
       esbuild:
         specifier: 0.20.1
         version: 0.20.1
@@ -1669,8 +1669,8 @@ packages:
       postcss: 8.4.35
     dev: true
 
-  /cssnano@6.0.5(postcss@8.4.35):
-    resolution: {integrity: sha512-tpTp/ukgrElwu3ESFY4IvWnGn8eTt8cJhC2aAbtA3lvUlxp6t6UPv8YCLjNnEGiFreT1O0LiOM1U3QyTBVFl2A==}
+  /cssnano@6.1.0(postcss@8.4.35):
+    resolution: {integrity: sha512-e2v4w/t3OFM6HTuSweI4RSdABaqgVgHlJp5FZrQsopHnKKHLFIvK2D3C4kHWeFIycN/1L1J5VIrg5KlDzn3r/g==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.4.31
