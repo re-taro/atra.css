@@ -52,7 +52,7 @@
   },
   "devDependencies": {
     "cssnano": "6.1.0",
-    "esbuild": "0.20.1",
+    "esbuild": "0.20.2",
     "postcss": "8.4.35",
     "postcss-banner": "4.0.1",
     "postcss-cli": "10.1.0",
