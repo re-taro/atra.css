@@ -6,6 +6,31 @@
   * dependencies
     * atra.css bumped to 1.1.0
 
+## [1.1.1](https://github.com/re-taro/atra.css/compare/web-page-v1.1.0...web-page-v1.1.1) (2025-01-22)
+
+
+### Bug Fixes
+
+* **deps:** update dependency sass to v1.64.0 ([5297b79](https://github.com/re-taro/atra.css/commit/5297b7975c204f94d5855b3247e5bd1f93b661ec))
+* **deps:** update dependency sass to v1.64.1 ([e273305](https://github.com/re-taro/atra.css/commit/e273305eb065762707c9bf91c2c3211a5bafa369))
+* **deps:** update dependency sass to v1.64.2 ([a1d1565](https://github.com/re-taro/atra.css/commit/a1d156574114dac2edc98ae34d1a80ac00274453))
+* **deps:** update dependency sass to v1.65.1 ([8402a5d](https://github.com/re-taro/atra.css/commit/8402a5d63e2a9500c663b83bb0b6b66f4a7814d9))
+* **deps:** update dependency sass to v1.66.0 ([3ec91ae](https://github.com/re-taro/atra.css/commit/3ec91ae5757479ee32e4f315d6f085fcf2601c4a))
+* **deps:** update dependency sass to v1.66.1 ([858bb63](https://github.com/re-taro/atra.css/commit/858bb63b1a8584d668b033ed515bc24bd9551bb2))
+* **deps:** update dependency sass to v1.67.0 ([dd35cbc](https://github.com/re-taro/atra.css/commit/dd35cbc9ed1d432e894d9d126d644ca93241ddf6))
+* **deps:** update dependency sass to v1.68.0 ([ba88e4b](https://github.com/re-taro/atra.css/commit/ba88e4b09597f787349e9af5812d0e39aec0582b))
+* **deps:** update dependency sass to v1.69.0 ([ab5d87e](https://github.com/re-taro/atra.css/commit/ab5d87e762008ed1c25a92298d9c6ba937558617))
+* **deps:** update dependency sass to v1.69.1 ([c1ca52d](https://github.com/re-taro/atra.css/commit/c1ca52d46e983254b6d3a24de82eeb63c4645d7e))
+* **deps:** update dependency sass to v1.69.2 ([47f3c72](https://github.com/re-taro/atra.css/commit/47f3c72a2cd7273997ec4e3be47a6005469dcf8c))
+* **deps:** update dependency sass to v1.69.3 ([1019483](https://github.com/re-taro/atra.css/commit/10194837ff258a7012c85837c0be65b013a506ef))
+* **deps:** update dependency sass to v1.69.4 ([32342af](https://github.com/re-taro/atra.css/commit/32342af6170c638c79717700b891ce8f79293e87))
+* **deps:** update dependency sass to v1.69.5 ([30fc3ce](https://github.com/re-taro/atra.css/commit/30fc3ce3574c333c917775a1b80998134bc54a0b))
+* **deps:** update dependency sass to v1.69.7 ([43e5d6a](https://github.com/re-taro/atra.css/commit/43e5d6ae1b221d530673ad66f961b8c0151aeeb2))
+* **deps:** update dependency sass to v1.71.0 ([0f08450](https://github.com/re-taro/atra.css/commit/0f084500d62602fab2074b4b92122fb9296f54d9))
+* **deps:** update dependency sass to v1.71.1 ([8b60828](https://github.com/re-taro/atra.css/commit/8b608287fd17f15cc487924dda308473a0e68c85))
+* **deps:** update dependency sass to v1.72.0 ([382496e](https://github.com/re-taro/atra.css/commit/382496ee53f748ddfea4b80cce5300d72f8b8e55))
+* **deps:** update dependency sass to v1.77.8 ([498daba](https://github.com/re-taro/atra.css/commit/498daba5c3ec8375690e69c0def296330aca750d))
+
 ## [1.1.0](https://github.com/re-taro/atra.css/compare/web-page-v1.0.7...web-page-v1.1.0) (2023-06-22)
 
 
