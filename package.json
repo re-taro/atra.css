@@ -25,7 +25,7 @@
     "@re-taro/eslint-config": "1.9.27",
     "eslint": "8.57.1",
     "eslint-config-prettier": "8.10.0",
-    "npm-run-all": "4.1.5",
+    "npm-run-all2": "5.0.0",
     "prettier": "2.8.8",
     "prettier-plugin-packagejson": "2.5.6",
     "prettier-plugin-sort-json": "2.0.0",
